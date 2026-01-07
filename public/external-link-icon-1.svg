@@ -1,0 +1,13 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 123 122" width="122" height="122">
+	<title>external-link-icon-svg</title>
+	<defs>
+		<image  width="123" height="122" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHsAAAB6CAMAAACoRdzoAAAAAXNSR0IB2cksfwAAAbNQTFRF////////AAAA////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////2xcZAQAAAJF0Uk5T/7wAPPTgPr1F8ijpLPM9Lugd3yLm5x/bE88S1uEVEMwMxArDwQm6roBeBrdcxzk370T3VU36S0/7/V9WRjo79UP2SVdb/mlnWbFBtErxNrBSpplY/ECfrThO7jFd7YZx8IJ7CMV5C8J1B7b4cAR4yzV3DS9s6iljD9Eh0GBzrNw/LbUzydg0DsYciImLitfA4q1ZV7cAAAMPSURBVHic7dlnVxNBFAbg+BolQQQUUYwNsaCiJhIVCwoB7L1gj6Jo7C32Dhbs5SebAp5kdza5c+dm10P2/Zq55zl3ZjIZhkCAkikoztQgqax0ptGGWW1Md8+usdoIhd2ybX0DtTO8s1E30zsb9Ya4iY2GRjds+17LZdZsF2x130DTnMrbDn1ndntzxW2nvoG587yz0TLfOxuRBUx7IW2Y43pns4iJm+61XBYvYdnEvkvNeSatSzm2SN9A2zKGLdN3Bl+ubwvs83xW1HhnAytl7PZVlqwm2Gs6NG31eq8lUIporrm6b6bdus47G+u9s6Mxz+wNnVq05F6L68mSfW/UpeXskDYtZoc26dtC672ZQQvZXVsYtIwd38qhRextLFlkr21n0gJ2N2utszGe8x2aB6mgvbOHTZvOeW+CTxv23cc5UmTsfhPZbM4HdpnZBn3vNqQN7D2GssGc76UbTrdXrt1Hp/uxT9TeTz7NgqHM8AOC9kGqHDh0OFdwRMw+SqYT0fGSY0I2/UhJ1P8rOi5inzhJpgcLyk7ZPtb/fg9Q5UCwvqjwtPVz7b7pf32Ez1hK2w3ts2T63HlbsWXNNe0LZDrZoCi/aGBfItNDKhq4zLbpR0qPda0ncoVrD1+l2t0ONHCNaSN1nUZ3OdLADaaNm7cI8u3eEjRwZ2Kc7tlyt/wjmuVIsece00bb/TJ07EEZGniYH6l/nqdLP6IlH5WlgcdMu/QL3pOnBBp4xrTx/IUj3fiSROd/h1l3h8grB3qojkgDr7l3prT6sTwYLVNXmDfse+pbRVXRVaF84u+YtuL21zmiRQOjXBvvLTWOPx/OYdvDxS/14Q/aNN9GqvD/UjH7LaWSdiGeHGXQJjZSH8fHO9xSKmkj8ik3XOt7LWWjJXu8Jsd4tKGNz18CzbVM2tRGuuMrlza2TeLbvj3J7KZBe8Zcsr8pFPWtT97+7tuu2z8UivpPDHn7pz/nrs+5l317ud7+Pvft/8/+9Vs6f8i2O6lW2/mZbnLb/pxXl+2vt/vx59z9VOuc+317YP8FR6vFRGGm5jAAAAAASUVORK5CYII="/>
+	</defs>
+	<style>
+		.s0 { fill: #000000 } 
+	</style>
+	<g id="Layer">
+		<use id="Layer 1" href="#img1" x="0" y="0"/>
+		<path id="Shape 1" class="s0" d="m106 83"/>
+	</g>
+</svg>
