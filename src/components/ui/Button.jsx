@@ -3,9 +3,9 @@ import { motion } from 'motion/react'
 
 const Button = ({ children, variant = 'primary', href = null, ...props }) => {
   const variants = {
-    primary: 'bg-gradient-to-r from-[#b4ff81] to-green-400 text-black hover:shadow-lg',
-    secondary: 'bg-gray-200 text-gray-900 hover:bg-gray-300',
-    outline: 'border-2 border-black text-black hover:bg-black hover:text-white'
+    primary: 'bg-lime-accent text-black hover:bg-[#8FE000] shadow-sm',
+    secondary: 'bg-dark-gray text-white hover:bg-gray-700 border border-gray-700',
+    outline: 'border-2 border-lime-accent text-lime-accent hover:bg-lime-accent hover:text-black'
   }
 
   const classes = `${variants[variant]} px-6 py-3 rounded-full font-bold cursor-pointer transition-all duration-300 inline-block`

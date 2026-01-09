@@ -6,11 +6,13 @@ export default {
   theme: {
     extend: {
       colors: {
-        "lime-accent": "#b4ff81",
-        "dark-blue": "#1d255a",
+        "lime-accent": "#A7FF00",
+        "dark-bg": "#1A1A1A",
+        "dark-gray": "#2A2A2A",
+        "light-gray": "#E0E0E0",
       },
       fontFamily: {
-        sans: ['-apple-system', 'BlinkMacSystemFont', '"Segoe UI"', 'Roboto', 'sans-serif'],
+        sans: ['Poppins', '-apple-system', 'BlinkMacSystemFont', '"Segoe UI"', 'Roboto', 'sans-serif'],
       },
       boxShadow: {
         "glow": "0 0 20px rgba(180, 255, 129, 0.3)",

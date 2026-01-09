@@ -4,12 +4,12 @@
 
 @layer base {
   :root {
-    --mainprimarycolor: #b4ff81;
-    --mainprimarycolordark: #1d255a;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif;
+    --mainprimarycolor: #a7ff00;
+    --mainprimarycolordark: #1a1a1a;
+    font-family: "Geom", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", sans-serif;
     line-height: 1.6;
     font-weight: 400;
-    color-scheme: light;
+    color-scheme: dark;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
@@ -26,7 +26,7 @@
     overflow-x: hidden;
     margin: 0;
     padding: 0;
-    background-color: white;
+    background-color: #ffffff;
     color: #111827;
     -webkit-user-select: none;
     -moz-user-select: none;
@@ -39,7 +39,8 @@
     transition-duration: 300ms;
   }
 
-  a:hover, a:focus {
+  a:hover,
+  a:focus {
     outline: none;
   }
 
@@ -48,37 +49,38 @@
   }
 
   ::-webkit-scrollbar-track {
-    background: #f1f1f1;
+    background: #1a1a1a;
   }
 
   ::-webkit-scrollbar-thumb {
-    background: #b4ff81;
+    background: #a7ff00;
     border-radius: 5px;
   }
 
   ::-webkit-scrollbar-thumb:hover {
-    background: #90ee90;
+    background: #8fe000;
   }
 }
 
 @layer components {
   .btn {
     padding: 10px 24px;
-    background: linear-gradient(135deg, #b4ff81 0%, #90ee90 100%);
+    background-color: #a7ff00;
     color: #000;
     font-weight: 600;
-    border-radius: 9999px;
+    border-radius: 8px;
     cursor: pointer;
     transition: all 300ms cubic-bezier(0.4, 0, 0.2, 1);
     border: none;
-    box-shadow: 0 4px 15px rgba(180, 255, 129, 0.3);
+    box-shadow: 0 4px 15px rgba(167, 255, 0, 0.18);
     display: inline-block;
     text-decoration: none;
   }
 
   .btn:hover {
-    box-shadow: 0 8px 25px rgba(180, 255, 129, 0.4);
+    box-shadow: 0 8px 25px rgba(167, 255, 0, 0.28);
     transform: translateY(-2px);
+    background-color: #8fe000;
   }
 
   .btn:active {
@@ -86,7 +88,7 @@
   }
 
   .section-bg {
-    background-color: #f3f4f6;
+    background-color: #1a1a1a;
     position: relative;
   }
 
@@ -98,12 +100,7 @@
     background-color: var(--mainprimarycolordark);
   }
 
-  .gradient-text {
-    background: linear-gradient(to bottom, #000 0%, #999 100%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-  }
+  /* removed generic gradient-text to match solid design */
 
   /* Cards and containers */
   .card {
@@ -129,8 +126,6 @@
   .scroller {
     overflow: hidden;
     padding-block: 1rem;
-    -webkit-mask-image: linear-gradient(90deg, transparent, white 20%, white 80%, transparent);
-    mask-image: linear-gradient(90deg, transparent, white 20%, white 80%, transparent);
   }
 
   .scroller__inner {
@@ -178,4 +173,3 @@
     animation: slideIn 0.6s ease-out;
   }
 }
-

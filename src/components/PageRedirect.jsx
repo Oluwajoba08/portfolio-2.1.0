@@ -15,7 +15,7 @@ const PageRedirect = () => {
         >
           {/* 404 Number */}
           <motion.h1 
-            className="text-8xl sm:text-9xl font-bold mb-4 bg-gradient-to-r from-[#b4ff81] to-green-400 bg-clip-text text-transparent"
+            className="text-8xl sm:text-9xl font-bold mb-4 text-[#b4ff81]"
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.1 }}
@@ -50,7 +50,7 @@ const PageRedirect = () => {
           >
             <Link 
               to="/"
-              className="inline-block bg-gradient-to-r from-[#b4ff81] to-green-400 text-black px-8 py-3 rounded-full font-bold hover:shadow-lg transition-all duration-300 hover:scale-105"
+              className="inline-block bg-[#b4ff81] text-black px-8 py-3 rounded-full font-bold hover:bg-[#9fe06a] transition-all duration-300 hover:scale-105"
             >
               Go to Home Page
             </Link>
