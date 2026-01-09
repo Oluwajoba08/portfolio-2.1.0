@@ -14,9 +14,9 @@ const Footer = () => {
 
   const socials = [
     { icon: TwitterLogo, href: "https://x.com/OluwajobaBukola", label: "X" },
-    { icon: LinkedInLogo, href: "https://linkedin.com/oluwajoba-bukola", label: "LinkedIn" },
+    { icon: LinkedInLogo, href: "https://linkedin.com/in/oluwajoba-bukola", label: "LinkedIn" },
     { icon: GithubLogo, href: "https://github.com/Oluwajoba08", label: "GitHub" },
-    { icon: MailLogo, href: "mailto:oluwajobaisaac@gmail.com", label: "Email" },
+    { icon: MailLogo, href: "mailto:oluwajobaisaac08@gmail.com", label: "Email" },
   ]
 
   return (
