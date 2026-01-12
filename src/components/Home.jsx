@@ -54,7 +54,7 @@ const Home = () => {
 
               {/* Stats Overlay - Bottom Right */}
               <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 1 }} className="absolute bottom-4 right-4 p-4">
-                <div className="flex gap-20">
+                <div className="flex sm:gap-20 gap-10">
                   <div className="flex flex-col">
                     <Counter number={3} styleText="text-2xl sm:text-4xl font-bold text-white" />
                     <p className="text-xs font-light text-light-gray whitespace-nowrap">Years of experience</p>
@@ -74,7 +74,7 @@ const Home = () => {
               </motion.div>
             </motion.div>
             {/* Skills Overlay - Top Right */}
-            <motion.div initial={{ opacity: 0, scale: 0.8 }} animate={{ opacity: 1, scale: 1 }} transition={{ delay: 0.8 }} className="absolute top-12 right-4 bg-dark-gray/90 backdrop-blur-sm rounded-lg p-3 border border-gray-700">
+            <motion.div initial={{ opacity: 0, scale: 0.8 }} animate={{ opacity: 1, scale: 1 }} transition={{ delay: 0.8 }} className="hidden sm:block absolute top-12 right-4 bg-dark-gray/90 backdrop-blur-sm rounded-lg p-3 border border-gray-700">
               <p className="text-xs text-light-gray mb-2">EXP in:</p>
               <div className="flex gap-2">
                 <div className="w-8 h-8 p-1.5 rounded-lg hover:bg-white flex items-center justify-center">

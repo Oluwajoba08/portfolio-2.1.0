@@ -15,7 +15,8 @@ const testimonials = [
   },
   {
     id: 2,
-    quote: "Outstanding work on our website redesign. The attention to detail and creative approach really impressed us.",
+    quote:
+      "Oluwajoba is an exceptionally skilled software engineer who pays attention to detail while carrying out his tasks. His technical expertise brings productivity to the team and makes scaling easier. If you are looking to work with a team player, Oluwajoba is your best bet.",
     author: "Jude Oscar",
     authorImage: "/jude-image.jpg",
     role: "Fullstack Developer",
@@ -82,24 +83,24 @@ const Testimonials = () => {
             {testimonials.map((testimonial) => (
               <motion.div
                 key={testimonial.id}
-                className={`p-8 lg:p-12 rounded-2xl w-[calc(100vw-10rem)] flex gap-10 items-stretch justify-center bg-neutral-300 text-black hover:bg-lime-accent transition-all duration-300`}
+                className={`p-6 md:p-8 lg:p-12 rounded-2xl w-[90vw] md:w-[calc(100vw-10rem)] flex flex-col md:flex-row gap-6 md:gap-10 items-stretch justify-center bg-neutral-300 text-black hover:bg-lime-accent transition-all duration-300`}
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
               >
-                <img src={testimonial.image} alt={testimonial.author} className="w-1/2 h-[calc(100vh-14rem)] rounded-xl object-cover" />
+                <img src={testimonial.image} alt={testimonial.author} className="w-full md:w-1/2 h-64 md:h-[calc(100vh-14rem)] rounded-xl object-cover" />
                 <div className="flex flex-col justify-between align-center">
                   {/* <div className="flex gap-2">
                     {testimonial.tags.map((tag) => (
                       <p className="text-sm px-3 py-2 rounded-full border-[1.5px] border-black">{tag}</p>
                     ))}
                   </div> */}
-                  <p className="text-xl">"{testimonial.quote}"</p>
-                  <div className="flex gap-4 items-center">
+                  <p className="text-lg md:text-xl">"{testimonial.quote}"</p>
+                  <div className="flex gap-4 items-center mt-4 md:mt-0">
                     <img className="w-12 h-12 rounded-full" src={testimonial.authorImage} alt={testimonial.author} />
                     <div className="flex flex-col">
-                      <p>{testimonial.author}</p>
-                      <p className="text-sm font-light text-gray-700">{testimonial.role}</p>
+                      <p className="font-medium">{testimonial.author}</p>
+                      <p className="text-xs md:text-sm font-light text-gray-700">{testimonial.role}</p>
                     </div>
                   </div>
                 </div>
