@@ -66,7 +66,7 @@ const Services = () => {
 
           {/* Right - Intro */}
           <motion.div className="lg:col-span-7" initial={{ opacity: 0, x: 20 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }}>
-            <p className="text-gray-600 mb-6 leading-relaxed">Hi, I'm Oluwajoba Bukola with over 10 years in web design and development. I'm here to help bring your business to life with top-notch service.</p>
+            <p className="text-gray-600 mb-6 leading-relaxed">Hi, I'm Oluwajoba Bukola with over 3 years in web design and development. I'm here to help bring your business to life with top-notch service.</p>
             <button className="bg-lime-accent text-black px-8 py-3 rounded-lg font-bold hover:bg-[#8FE000] transition-all duration-300" whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
               Hire Me
             </button>
@@ -77,18 +77,19 @@ const Services = () => {
           {/* UI/UX Design Service Card */}
           {servicesData.map((service) => (
             <motion.div
+              layout
               key={service.id}
-              className="group rounded-2xl hover:p-8 hover:lg:p-12 px-3 py-3 lg:px-6 lg:py-4 border border-gray-200 relative overflow-hidden"
+              className={`rounded-2xl border border-gray-200 relative overflow-hidden transition-all duration-300 ${hoveredId === service.id ? "p-8 lg:p-12" : "px-3 py-3 lg:px-6 lg:py-4"}`}
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              onHoverStart={() => setHoveredId(service.id)}
-              onHoverEnd={() => setHoveredId(null)}
+              onMouseEnter={() => setHoveredId(service.id)}
+              onMouseLeave={() => setHoveredId(null)}
             >
               {/* <div className="flex gap-8 items-center w-full justify-between"> */}
               {/* Left Content */}
-              <div className="group-hover:flex flex-col sm:flex-row gap-8 items-stretch">
-                <div className="flex flex-col">
+              <div className="flex flex-col sm:flex-row gap-8 items-stretch">
+                <div className="flex flex-col w-full">
                   <div className="flex items-center justify-between">
                     <h3 className="text-2xl sm:text-3xl font-bold text-gray-900">{service.name}</h3>
                     <AnimatePresence initial={false}>

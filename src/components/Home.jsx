@@ -20,7 +20,7 @@ const Home = () => {
         <div className="w-full max-w-7xl mx-auto bg-dark-bg rounded-3xl p-8 sm:p-12 lg:p-16 relative">
           <div className="flex flex-col lg:flex-row items-center w-full gap-8 lg:gap-16">
             {/* Left Content */}
-            <motion.div className="flex flex-col justify-between">
+            <motion.div className="flex flex-col justify-between pt-24 sm:pt-0">
               <motion.div initial={{ opacity: 0, x: -50 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.8 }} className="flex flex-col items-center lg:items-start flex-1 text-center lg:text-left">
                 <motion.p className="text-lg sm:text-xl mb-4 text-white" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.2 }}>
                   Hey 👋 I'm Oluwajoba Bukola
@@ -46,7 +46,7 @@ const Home = () => {
             <motion.div initial={{ opacity: 0, x: 50 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.8, delay: 0.2 }} className="flex-1"></motion.div>
 
             {/* Profile Image - Absolutely Positioned */}
-            <motion.div initial={{ opacity: 0, x: 50 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.8, delay: 0.2 }} className="absolute bottom-0 right-8 sm:right-12 lg:right-16 w-64 h-64 sm:w-80 sm:h-80 lg:w-96 lg:h-96">
+            <motion.div initial={{ opacity: 0, x: 50 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.8, delay: 0.2 }} className="absolute bottom-0 right-8 sm:right-12 lg:right-16 w-72 h-72 sm:w-80 sm:h-80 lg:w-96 lg:h-96">
               {/* Profile Image */}
               <div className="w-full h-full overflow-hidden">
                 <img src="/oluwajoba-image.png" alt="Oluwajoba Bukola - Frontend Developer" className="w-full h-full object-cover" style={{ borderRadius: 0, objectPosition: "bottom" }} />
@@ -110,7 +110,7 @@ const Home = () => {
                 Welcome to my portfolio! I'm <span className="font-semibold">Oluwajoba Bukola</span>, a <span className="font-semibold">passionate and innovative web designer and developer</span>. With{" "}
                 <span className="font-semibold">3+ years of experience</span> in the industry, I specialize in creating visually stunning and highly functional websites that provide an exceptional user experience.
               </h2>
-              <a href="portfolio" className="inline-flex items-center gap-2 text-gray-900 hover:text-lime-accent transition-colors duration-300 underline">
+              <a href="/projects" className="inline-flex items-center gap-2 text-gray-900 hover:text-lime-accent transition-colors duration-300 underline">
                 See my latest work
                 <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />

@@ -31,7 +31,7 @@ const Navbar = () => {
   }, [])
 
   return (
-    <motion.nav className={`h-16 w-full flex justify-between items-center px-6 md:px-8 lg:px-12 py-4 fixed z-50 transition-all duration-300 bg-white`} initial={{ y: -100 }} animate={{ y: 0 }} transition={{ duration: 0.5 }}>
+    <motion.nav className={`h-16 w-full flex justify-between items-center px-6 md:px-8 lg:px-12 py-4 fixed z-50 transition-all duration-300 backdrop-blur-xl bg-white/50`} initial={{ y: -100 }} animate={{ y: 0 }} transition={{ duration: 0.5 }}>
       {/* Logo */}
       <Link to={"/"} onClick={() => setNav(false)} className="flex items-center hover:scale-110 transition-transform">
         {/* <div className="w-10 h-10 rounded-lg bg-dark-gray flex items-center justify-center font-bold text-white border border-gray-300">H</div> */}
