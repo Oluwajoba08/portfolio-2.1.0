@@ -9,6 +9,7 @@ import NextJsIcon from "/next-js.svg"
 import ExpoIcon from "/expo-go-app.svg"
 import ReactIcon from "/react-logo.png"
 import Counter from "./ui/Counter"
+import WordOpacityScroll from "./WordOpacityScroll"
 
 const Home = () => {
   return (
@@ -105,11 +106,12 @@ const Home = () => {
             </motion.div>
 
             {/* Right - About Text */}
-            <motion.div className="lg:col-span-9" initial={{ opacity: 0, x: 20 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }}>
-              <h2 className="text-gray-900 text-2xl sm:text-4xl sm:[line-height:3rem] mb-6">
+            <motion.div className="lg:col-span-9 relative" initial={{ opacity: 0, x: 20 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }}>
+              {/* <h2 className="text-gray-900 text-2xl sm:text-4xl sm:[line-height:3rem] mb-6">
                 Welcome to my portfolio! I'm <span className="font-semibold">Oluwajoba Bukola</span>, a <span className="font-semibold">passionate and innovative web designer and developer</span>. With{" "}
                 <span className="font-semibold">3+ years of experience</span> in the industry, I specialize in creating visually stunning and highly functional websites that provide an exceptional user experience.
-              </h2>
+              </h2> */}
+              <WordOpacityScroll value="Welcome to my portfolio! I'm Oluwajoba Bukola, a passionate and innovative web designer and developer. With 3+ years of experience in the industry, I specialize in creating visually stunning and highly functional websites that provide an exceptional user experience." />
               <a href="/projects" className="inline-flex items-center gap-2 text-gray-900 hover:text-lime-accent transition-colors duration-300 underline">
                 See my latest work
                 <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
