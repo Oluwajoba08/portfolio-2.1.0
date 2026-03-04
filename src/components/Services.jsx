@@ -105,7 +105,7 @@ const Services = () => {
                   {/* <h4 className="text-xl font-semibold text-gray-900 mb-4">Corporate Website Landing Page</h4> */}
                   <AnimatePresence initial={false}>
                     {hoveredId === service.id && (
-                      <motion.p key={service.id + "description"} initial={{ opacity: 0, scale: 0 }} animate={{ opacity: 1, scale: 1 }} exit={{ opacity: 0, scale: 0 }} className="text-gray-600 mt-4 mb-10 leading-relaxed justify-between">
+                      <motion.p key={service.id + "description"} initial={{ opacity: 0, scale: 0 }} animate={{ opacity: 1, scale: 1 }} exit={{ opacity: 0, scale: 0 }} className="text-gray-600 mt-2 mb-5 sm:mt-4 sm:mb-10 leading-relaxed justify-between">
                         {service.description}
                       </motion.p>
                     )}
@@ -113,7 +113,7 @@ const Services = () => {
 
                   <AnimatePresence initial={false}>
                     {hoveredId === service.id && (
-                      <motion.div key={service.id + "stats"} initial={{ opacity: 0, scale: 0 }} animate={{ opacity: 1, scale: 1 }} exit={{ opacity: 0, scale: 0 }} className="flex gap-4 items-center justify-between">
+                      <motion.div key={service.id + "stats"} initial={{ opacity: 0, scale: 0 }} animate={{ opacity: 1, scale: 1 }} exit={{ opacity: 0, scale: 0 }} className="flex gap-4 items-center justify-between mt-auto">
                         <div className="text-center">
                           <Counter styleText={"text-2xl sm:text-3xl font-bold text-gray-900 mb-1"} number={service.stats[0].value} />
                           <p className="text-xs text-gray-600">{service.stats[0].name}</p>
@@ -138,7 +138,7 @@ const Services = () => {
                   {hoveredId === service.id && (
                     <motion.img
                       key={service.id + "image"}
-                      className="w-1/2 h-[calc(100vh-18rem)] object-cover rounded-2xl"
+                      className="md:w-1/2 h-60 md:h-[calc(100vh-18rem)] object-cover rounded-2xl"
                       initial={{ opacity: 0, scale: 0 }}
                       animate={{ opacity: 1, scale: 1 }}
                       exit={{ opacity: 0, scale: 0 }}
