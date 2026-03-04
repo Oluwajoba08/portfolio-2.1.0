@@ -23,6 +23,7 @@ const projectsData = [
 const Projects = () => {
   return (
     <section className="py-20 px-4 sm:px-6 md:px-8 lg:px-12 bg-white">
+      <TextScroller text="PROJECTS" />
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 gap-4">
           {projectsData.map((project) => (
@@ -41,14 +42,15 @@ const Projects = () => {
                   </div>
 
                   <p className="text-gray-600 mt-4 mb-10 leading-relaxed justify-between">{project.description}</p>
-                  <button
-                    onClick={() => window.open(project.link, "_blank")}
+                  <a
+                    // onClick={() => window.open(project.link, "_blank")}
+                    href={project.link}
                     className="bg-lime-accent text-black px-8 py-3 rounded-lg font-semibold hover:bg-[#8FE000] transition-all duration-300 w-full md:w-fit"
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
                   >
                     View live project
-                  </button>
+                  </a>
                 </div>
                 <img className="w-full md:w-1/2 h-64 md:h-[calc(100vh-18rem)] object-cover rounded-2xl" src={project.image} alt="image" />
               </div>

@@ -1,7 +1,7 @@
 import React from "react"
 import { motion } from "motion/react"
 import Services from "./Services"
-// import Projects from "./Projects"
+import Projects from "./Projects"
 import Testimonials from "./Testimonials"
 import TextScroller from "./ui/TextScroller"
 import FigmaIcon from "/figma.svg"
@@ -94,7 +94,7 @@ const Home = () => {
             </motion.div>
           </div>
         </div>
-      </section>
+      </section> 
 
       {/* Welcome/About Section */}
       <section className="py-16 px-4 sm:px-6 md:px-8 lg:px-12 bg-white">
@@ -127,7 +127,7 @@ const Home = () => {
       <Services />
 
       {/* Projects Section */}
-      {/* <Projects /> */}
+      <Projects />
 
       {/* Testimonials Section */}
       {/* <TextScroller text="Testimonials" /> */}
