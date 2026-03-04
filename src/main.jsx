@@ -15,22 +15,22 @@ const router = createBrowserRouter([
     Component: App,
     children: [
       { index: true, Component: Home },
-      {
-        path: "about",
-        Component: About,
-      },
-      {
-        path: "projects",
-        Component: Projects,
-      },
-      {
-        path: "blog",
-        Component: Blog,
-      },
-      {
-        path: "contact",
-        Component: Contact,
-      },
+      // {
+      //   path: "about",
+      //   Component: About,
+      // },
+      // {
+      //   path: "projects",
+      //   Component: Projects,
+      // },
+      // {
+      //   path: "blog",
+      //   Component: Blog,
+      // },
+      // {
+      //   path: "contact",
+      //   Component: Contact,
+      // },
     ],
   },
 ])

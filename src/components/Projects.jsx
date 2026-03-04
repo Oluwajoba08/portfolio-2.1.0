@@ -2,6 +2,7 @@ import React from "react"
 import { motion } from "motion/react"
 import invofiHomeScreen from "/invofi-home-screen.jpg"
 import AvilaBuildings from "/avila-website-mockup.jpg"
+import Framesbook from "/framesbook-2.png"
 import TextScroller from "./ui/TextScroller"
 
 const projectsData = [
@@ -14,6 +15,13 @@ const projectsData = [
   },
   {
     id: 2,
+    name: "Framesbook",
+    description: "Framesbook is a clone of the popular social media app, Facebook. Users can find friends, send messages to loved ones, share photos, videos and stories.",
+    image: Framesbook,
+    link: "#",
+  },
+  {
+    id: 3,
     name: "Avila Buildings",
     description: "Avila Buildings is a platform where users can find properties (houses, apartments, and commercial properties) for sale and rent.",
     image: AvilaBuildings,
@@ -23,7 +31,7 @@ const projectsData = [
 
 const Projects = () => {
   return (
-    <section className="py-20 px-4 sm:px-6 md:px-8 lg:px-12 bg-white">
+    <section id="projects" className="py-20 px-4 sm:px-6 md:px-8 lg:px-12 bg-white">
       <TextScroller text="PROJECTS" />
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 gap-4">

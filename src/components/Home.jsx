@@ -19,17 +19,15 @@ const Home = () => {
       {/* Hero Section */}
       <section className="min-h-screen pb-16 pt-0 px-4 sm:px-6 md:px-8 lg:px-12 flex relative">
         <div className="w-full max-w-7xl mx-auto bg-dark-bg rounded-3xl p-8 sm:p-12 lg:p-16 relative">
-          <div className="flex flex-col lg:flex-row items-center w-full gap-8 lg:gap-16">
+          <div className="flex flex-col md:flex-row items-center w-full gap-8 lg:gap-16">
             {/* Left Content */}
-            <motion.div className="flex flex-col justify-between pt-24 sm:pt-0">
-              <motion.div initial={{ opacity: 0, x: -50 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.8 }} className="flex flex-col items-center lg:items-start flex-1 text-center lg:text-left">
-                <motion.p className="text-lg sm:text-xl mb-4 text-white" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.2 }}>
+            <motion.div className="flex flex-col justify-between pt-10 md:pt-20">
+              <motion.div initial={{ opacity: 0, x: -50 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.8 }} className="flex flex-col items-center md:items-start flex-1 text-center md:text-left">
+                <motion.p className="text-lg sm:text-xl mb-2 md:mb-4 text-white" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.2 }}>
                   Hey 👋 I'm Oluwajoba Bukola
                 </motion.p>
-                <motion.h1 className="text-5xl sm:text-6xl lg:text-7xl font-semibold leading- sm:leading-relaxed mb-8 text-white" initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.3 }}>
-                  Frontend
-                  <br />
-                  Developer
+                <motion.h1 className="text-5xl md:text-6xl lg:text-7xl font-semibold md:leading-normal mb-4 md:mb-8 text-white" initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.3 }}>
+                  Frontend/Mobile Developer
                 </motion.h1>
 
                 <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.5 }} className="mb-8">
@@ -38,7 +36,7 @@ const Home = () => {
                   </button>
                 </motion.div>
               </motion.div>
-              <motion.p className="text-neutral-400 mb-8 max-w-md leading-relaxed text-sm sm:text-base" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.6 }}>
+              <motion.p className="hidden sm:flex text-neutral-400 mb-8 max-w-md leading-relaxed text-xs sm:text-sm text-center sm:text-left" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.6 }}>
                 Versatile Frontend Developer having 3+ years of Experience.
               </motion.p>
             </motion.div>
@@ -97,7 +95,7 @@ const Home = () => {
       </section> 
 
       {/* Welcome/About Section */}
-      <section className="py-16 px-4 sm:px-6 md:px-8 lg:px-12 bg-white">
+      <section id="about" className="py-16 px-4 sm:px-6 md:px-8 lg:px-12 bg-white">
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
             {/* Left - Available for Work */}

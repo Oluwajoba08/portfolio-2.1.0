@@ -53,7 +53,7 @@ const Services = () => {
   const [hoveredId, setHoveredId] = useState(null)
 
   return (
-    <section className="py-20 px-4 sm:px-6 md:px-8 lg:px-12 bg-white">
+    <section id="services" className="py-20 px-4 sm:px-6 md:px-8 lg:px-12 bg-white">
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 mb-16">
           {/* Left - Heading */}
@@ -79,7 +79,7 @@ const Services = () => {
             <motion.div
               layout
               key={service.id}
-              className={`rounded-2xl border border-gray-200 relative overflow-hidden transition-all duration-300 ${hoveredId === service.id ? "p-8 lg:p-12" : "px-3 py-3 lg:px-6 lg:py-4"}`}
+              className={`rounded-2xl border border-gray-200 relative overflow-hidden transition-all duration-300 ${hoveredId === service.id ? "p-8 lg:p-12" : "px-5 py-5 lg:px-6 lg:py-5"}`}
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}

@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react"
-import { Link, NavLink } from "react-router-dom"
+import { Link } from "react-router-dom"
 import { motion } from "motion/react"
 
 const Navbar = () => {
@@ -41,24 +41,29 @@ const Navbar = () => {
       {/* Desktop Navigation */}
       <motion.ul className={`list-none hidden md:flex items-center gap-2`} initial={{ opacity: 0, y: -10 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.1 }}>
         <li>
-          <NavLink to={"/"} className={({ isActive }) => `px-4 py-2 rounded-lg transition-all duration-300 font-medium ${isActive ? "bg-lime-accent text-black" : "text-gray-900 hover:text-lime-accent"}`}>
+          <a href={"#"} className={`px-4 py-2 rounded-lg transition-all duration-300 font-medium text-gray-900`}>
             Home
-          </NavLink>
+          </a>
         </li>
         <li>
-          <NavLink to={"/about"} className={({ isActive }) => `px-4 py-2 rounded-lg transition-all duration-300 font-medium ${isActive ? "bg-lime-accent text-black" : "text-gray-900 hover:text-lime-accent"}`}>
+          <a href={"#about"} className={`px-4 py-2 rounded-lg transition-all duration-300 font-medium text-gray-900`}>
             About
-          </NavLink>
+          </a>
         </li>
         <li>
-          <NavLink to={"/projects"} className={({ isActive }) => `px-4 py-2 rounded-lg transition-all duration-300 font-medium ${isActive ? "bg-lime-accent text-black" : "text-gray-900 hover:text-lime-accent"}`}>
-            Portfolio
-          </NavLink>
+          <a href={"#services"} className={`px-4 py-2 rounded-lg transition-all duration-300 font-medium text-gray-900`}>
+            Services
+          </a>
         </li>
         <li>
-          <NavLink to={"/blog"} className={({ isActive }) => `px-4 py-2 rounded-lg transition-all duration-300 font-medium ${isActive ? "bg-lime-accent text-black" : "text-gray-900 hover:text-lime-accent"}`}>
-            Blog
-          </NavLink>
+          <a href={"#projects"} className={`px-4 py-2 rounded-lg transition-all duration-300 font-medium text-gray-900`}>
+            Projects
+          </a>
+        </li>
+        <li>
+          <a href={"#testimonials"} className={`px-4 py-2 rounded-lg transition-all duration-300 font-medium text-gray-900`}>
+            Testimonials
+          </a>
         </li>
       </motion.ul>
 
@@ -90,24 +95,29 @@ const Navbar = () => {
         <motion.div className={`fixed top-16 left-0 right-0 bg-white border-t border-gray-200 shadow-lg p-6 transition-all duration-300 ${nav ? "translate-y-0 opacity-100" : "-translate-y-full opacity-0 pointer-events-none"}`} initial={false}>
           <ul className="list-none flex flex-col gap-4">
             <li>
-              <NavLink to={"/"} onClick={handleNavToggle} className={({ isActive }) => `px-4 py-2 rounded-lg transition-all duration-300 font-medium block ${isActive ? "bg-lime-accent text-black" : "text-gray-900 hover:text-lime-accent"}`}>
+              <a href={"#"} className={`px-4 py-2 rounded-lg transition-all duration-300 font-medium text-gray-900`}>
                 Home
-              </NavLink>
+              </a>
             </li>
             <li>
-              <NavLink to={"/about"} onClick={handleNavToggle} className={({ isActive }) => `px-4 py-2 rounded-lg transition-all duration-300 font-medium block ${isActive ? "bg-lime-accent text-black" : "text-gray-900 hover:text-lime-accent"}`}>
+              <a href={"#about"} className={`px-4 py-2 rounded-lg transition-all duration-300 font-medium text-gray-900`}>
                 About
-              </NavLink>
+              </a>
             </li>
             <li>
-              <NavLink to={"/projects"} onClick={handleNavToggle} className={({ isActive }) => `px-4 py-2 rounded-lg transition-all duration-300 font-medium block ${isActive ? "bg-lime-accent text-black" : "text-gray-900 hover:text-lime-accent"}`}>
-                Portfolio
-              </NavLink>
+              <a href={"#services"} className={`px-4 py-2 rounded-lg transition-all duration-300 font-medium text-gray-900`}>
+                Services
+              </a>
             </li>
             <li>
-              <NavLink to={"/blog"} onClick={handleNavToggle} className={({ isActive }) => `px-4 py-2 rounded-lg transition-all duration-300 font-medium block ${isActive ? "bg-lime-accent text-black" : "text-gray-900 hover:text-lime-accent"}`}>
-                Blog
-              </NavLink>
+              <a href={"#projects"} className={`px-4 py-2 rounded-lg transition-all duration-300 font-medium text-gray-900`}>
+                Projects
+              </a>
+            </li>
+            <li>
+              <a href={"#testimonials"} className={`px-4 py-2 rounded-lg transition-all duration-300 font-medium text-gray-900`}>
+                Testimonials
+              </a>
             </li>
             <li>
               <button className="w-full flex items-center justify-center gap-2 bg-lime-accent text-black px-6 py-2 rounded-lg font-semibold hover:bg-[#8FE000] transition-all duration-300" onClick={handleNavToggle}>

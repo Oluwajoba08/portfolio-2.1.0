@@ -1,4 +1,4 @@
-# Andlo - Designer & Developer Portfolio
+# Oluwajoba - Designer & Developer Portfolio
 
 A modern, pixel-perfect portfolio website showcasing frontend and fullstack development skills. Built with React, Tailwind CSS, Framer Motion, and Vite.
 

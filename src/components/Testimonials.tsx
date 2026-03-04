@@ -9,7 +9,7 @@ const testimonials = [
       "Working with Joba was a fantastic experience. He is not only highly skilled but also incredibly reliable and communicative. Joba consistently delivered quality work on time and was proactive in finding solutions. I would happily recommend them to anyone looking for a dedicated professional.",
     author: "Silas Idowu",
     authorImage: "/silas-image.jpg",
-    role: "Mobile App Developer at Azawire",
+    role: "Mobile App Developer",
     image: "/learn-more-link-list.jpeg",
     tags: ["Mobile", "Development"],
   },
@@ -22,6 +22,16 @@ const testimonials = [
     role: "Fullstack Developer",
     image: "/flash-image.jpeg",
     tags: ["Website", "Development"],
+  },
+  {
+    id: 3,
+    quote:
+      "I've had the chance to work with him, and I really admire his work ethic. He's good at what he does, delivers tasks quickly, communicates clearly, and is very friendly. I really enjoy collaborating with him.",
+    author: "Michael Adeyemo",
+    authorImage: "/mikky.jpg",
+    role: "UI/UX Designer",
+    image: "/chess-king.jpg",
+    tags: ["UI/UX", "Design"],
   },
   // {
   //   id: 3,
@@ -74,7 +84,7 @@ const Testimonials = () => {
   }
 
   return (
-    <section className="pt-20 pb-0 relative overflow-hidden">
+    <section id="testimonials" className="pt-20 pb-0 relative overflow-hidden">
       <TextScroller text="TESTIMONIALS" />
 
       <div className="max-w-7xl mx-auto relative z-10 ">
@@ -97,7 +107,7 @@ const Testimonials = () => {
                   </div> */}
                   <p className="text-lg md:text-xl">"{testimonial.quote}"</p>
                   <div className="flex gap-4 items-center mt-4 md:mt-0">
-                    <img className="w-12 h-12 rounded-full" src={testimonial.authorImage} alt={testimonial.author} />
+                    <img className="w-12 h-12 rounded-full object-cover" src={testimonial.authorImage} alt={testimonial.author} />
                     <div className="flex flex-col">
                       <p className="font-medium">{testimonial.author}</p>
                       <p className="text-xs md:text-sm font-light text-gray-700">{testimonial.role}</p>
