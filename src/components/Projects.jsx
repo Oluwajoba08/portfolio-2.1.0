@@ -2,6 +2,7 @@ import React from "react"
 import { motion } from "motion/react"
 import invofiHomeScreen from "/invofi-home-screen.jpg"
 import AvilaBuildings from "/avila-website-mockup.jpg"
+import TextScroller from "./ui/TextScroller"
 
 const projectsData = [
   {
