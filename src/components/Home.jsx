@@ -27,7 +27,9 @@ const Home = () => {
                   Hey 👋 I'm Oluwajoba Bukola
                 </motion.p>
                 <motion.h1 className="text-5xl md:text-6xl lg:text-7xl font-semibold md:leading-normal mb-4 md:mb-8 text-white" initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.3 }}>
-                  Frontend/Mobile Developer
+                  Frontend/
+                  <br/>
+                  Mobile Developer
                 </motion.h1>
 
                 <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.5 }} className="mb-8">
