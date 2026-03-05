@@ -79,7 +79,7 @@ const Services = () => {
             <motion.div
               layout
               key={service.id}
-              className={`rounded-2xl border border-gray-200 relative overflow-hidden transition-all duration-300 ${hoveredId === service.id ? "p-8 lg:p-12" : "px-5 py-5 lg:px-6 lg:py-5"}`}
+              className={`rounded-2xl border border-gray-200 relative overflow-hidden transition-all duration-300 ${hoveredId === service.id ? "p-8 lg:p-12" : "p-6 lg:p-10"}`}
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}

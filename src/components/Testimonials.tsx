@@ -33,15 +33,16 @@ const testimonials = [
     image: "/chess-king.jpg",
     tags: ["UI/UX", "Design"],
   },
-  // {
-  //   id: 3,
-  //   quote: "Outstanding work on our website redesign. The attention to detail and creative approach really impressed us.",
-  //   author: "John Hone ",
-  //   authorImage: "/oluwajoba-image.png",
-  //   role: "Client",
-  //   image: "/invofi-home-screen.jpg",
-  //   tags: ["Graphic", "Design"],
-  // },
+  {
+    id: 4,
+    quote:
+      "He is good at what he does. He helped integrate a MySQL database to my club's website. And the backend has been working seamlessly.",
+    author: "Emmanuel Oni",
+    authorImage: "/avatar.jpg",
+    role: "CEO, Mindvolta",
+    image: "/man-on-laptop.jpg",
+    tags: ["Mindset", "Psychology"],
+  },
 ]
 
 const Testimonials = () => {

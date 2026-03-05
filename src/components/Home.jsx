@@ -33,14 +33,11 @@ const Home = () => {
                 </motion.h1>
 
                 <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.5 }} className="mb-8">
-                  <button className="bg-lime-accent text-black px-8 py-3 rounded-lg font-semibold hover:bg-[#8FE000] transition-all duration-300" whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
+                  <button className="bg-lime-accent text-black px-8 py-3 rounded-full font-semibold hover:bg-[#8FE000] transition-all duration-300" whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
                     Hire Me
                   </button>
                 </motion.div>
               </motion.div>
-              <motion.p className="hidden sm:flex text-neutral-400 mb-8 max-w-md leading-relaxed text-xs sm:text-sm text-center sm:text-left" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.6 }}>
-                Versatile Frontend Developer having 3+ years of Experience.
-              </motion.p>
             </motion.div>
 
             {/* Right Profile Image with Overlays */}
@@ -54,7 +51,10 @@ const Home = () => {
               </div>
 
               {/* Stats Overlay - Bottom Right */}
-              <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 1 }} className="absolute bottom-4 right-4 p-4">
+              <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 1 }} className="absolute bottom-4 left-0 right-0 p-4 flex justify-between items-center">
+                <motion.p className="text-neutral-400 mb-8 max-w-md leading-relaxed text-xs sm:text-sm text-center sm:text-left " initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.6 }}>
+                  Versatile Frontend Developer having 3+ years of Experience.
+                </motion.p>
                 <div className="flex sm:gap-20 gap-10">
                   <div className="flex flex-col">
                     <Counter number={3} styleText="text-2xl sm:text-4xl font-bold text-white" />
