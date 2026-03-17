@@ -78,16 +78,16 @@ const Home = () => {
             <motion.div initial={{ opacity: 0, scale: 0.8 }} animate={{ opacity: 1, scale: 1 }} transition={{ delay: 0.8 }} className="hidden sm:block absolute top-12 right-4 bg-dark-gray/90 backdrop-blur-sm rounded-lg p-3 border border-gray-700">
               <p className="text-xs text-light-gray mb-2">EXP in:</p>
               <div className="flex gap-2">
-                <div className="w-8 h-8 p-1.5 rounded-lg hover:bg-white flex items-center justify-center">
+                <div className="w-8 h-8 p-1.5 rounded-lg bg-neutral-700 hover:bg-white flex items-center justify-center">
                   <img src={ReactIcon} alt="react-icon" />
                 </div>
-                <div className="w-8 h-8 p-1.5 rounded-lg hover:bg-white flex items-center justify-center">
+                <div className="w-8 h-8 p-1.5 rounded-lg bg-neutral-700 hover:bg-white flex items-center justify-center">
                   <img src={NextJsIcon} alt="next-icon" />
                 </div>
-                <div className="w-8 h-8 p-1.5 rounded-lg hover:bg-white flex items-center justify-center">
+                <div className="w-8 h-8 p-1.5 rounded-lg bg-neutral-700 hover:bg-white flex items-center justify-center">
                   <img src={ExpoIcon} alt="expo-icon" />
                 </div>
-                <div className="w-8 h-8 p-1.5 rounded-lg hover:bg-white flex items-center justify-center">
+                <div className="w-8 h-8 p-1.5 rounded-lg bg-neutral-700 hover:bg-white flex items-center justify-center">
                   <img src={FigmaIcon} alt="figma-icon" />
                 </div>
               </div>
