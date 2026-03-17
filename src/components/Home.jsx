@@ -54,7 +54,7 @@ const Home = () => {
               </div>
 
               {/* Stats Overlay - Bottom Right */}
-              <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 1 }} className="absolute bottom-0 right-0 p-4 flex justify-between items-center">
+              <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 1 }} className="absolute bottom-3 right-0 p-4 flex justify-between items-center">
                 <div className="flex sm:gap-20 gap-10">
                   <div className="flex flex-col">
                     <Counter number={3} styleText="text-2xl sm:text-4xl font-bold text-white" />
