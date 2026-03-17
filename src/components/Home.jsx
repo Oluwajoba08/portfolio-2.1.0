@@ -37,6 +37,9 @@ const Home = () => {
                     Hire Me
                   </button>
                 </motion.div>
+                <motion.p className="text-neutral-400 mb-8 leading-relaxed text-xs sm:text-sm text-center sm:text-left " initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.6 }}>
+                  Versatile Frontend Developer having 3+ years of Experience.
+                </motion.p>
               </motion.div>
             </motion.div>
 
@@ -51,10 +54,7 @@ const Home = () => {
               </div>
 
               {/* Stats Overlay - Bottom Right */}
-              <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 1 }} className="absolute bottom-4 left-0 right-0 p-4 flex justify-between items-center">
-                <motion.p className="text-neutral-400 mb-8 max-w-md leading-relaxed text-xs sm:text-sm text-center sm:text-left " initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.6 }}>
-                  Versatile Frontend Developer having 3+ years of Experience.
-                </motion.p>
+              <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 1 }} className="absolute bottom-0 right-0 p-4 flex justify-between items-center">
                 <div className="flex sm:gap-20 gap-10">
                   <div className="flex flex-col">
                     <Counter number={3} styleText="text-2xl sm:text-4xl font-bold text-white" />
