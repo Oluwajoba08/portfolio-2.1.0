@@ -1,6 +1,8 @@
 import React from "react"
 import { motion } from "motion/react"
 import invofiHomeScreen from "/invofi-home-screen.jpg"
+import ResavationRecap from "/resavation-recap.jpg"
+import VproofLandingPage from "/vproof-landing-closeup.jpg"
 import AvilaBuildings from "/avila-website-mockup.jpg"
 import Framesbook from "/framesbook-2.png"
 import TextScroller from "./ui/TextScroller"
@@ -9,19 +11,33 @@ const projectsData = [
   {
     id: 1,
     name: "Invofi",
-    description: "Invofi is a platform that helps users to manage their payments and invoicing.",
+    description: "Invofi is a platform that helps business owners to manage payments, invoicing, monitor business analytics and track growth.",
     image: invofiHomeScreen,
-    link: "https://invofi.com.ng",
+    link: "https://useinvofi.com",
   },
   {
     id: 2,
+    name: "Resavation App",
+    description: "Resavation is a platform that helps students to find affordable and condusive homes around campus.",
+    image: ResavationRecap,
+    link: "https://resavation.com",
+  },
+  {
+    id: 3,
+    name: "Vproof",
+    description: "Vproof is a verification layer built to eliminate transfer fraud with AI by using vScore: A trust score given based on submitted documents and credentials. This also helps small-scale businesses to obtain loans from financial institutions without the hassle.",
+    image: VproofLandingPage,
+    link: "https://invofi-squadco.vercel.app",
+  },
+  {
+    id: 4,
     name: "Framesbook",
     description: "Framesbook is a clone of the popular social media app, Facebook. Users can find friends, send messages to loved ones, share photos, videos and stories.",
     image: Framesbook,
     link: "#",
   },
   {
-    id: 3,
+    id: 5,
     name: "Avila Buildings",
     description: "Avila Buildings is a platform where users can find properties (houses, apartments, and commercial properties) for sale and rent.",
     image: AvilaBuildings,
@@ -51,15 +67,16 @@ const Projects = () => {
                   </div>
 
                   <p className="text-gray-600 mt-4 mb-10 leading-relaxed justify-between">{project.description}</p>
-                  <a
+                  <motion.a
                     // onClick={() => window.open(project.link, "_blank")}
                     href={project.link}
+                    target="_blank"
                     className="bg-lime-accent text-black px-8 py-3 rounded-lg font-semibold hover:bg-[#8FE000] transition-all duration-300 w-full md:w-fit"
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
                   >
                     View live project
-                  </a>
+                  </motion.a>
                 </div>
                 <img className="w-full md:w-1/2 h-64 md:h-[calc(100vh-18rem)] object-cover rounded-2xl" src={project.image} alt="image" />
               </div>
