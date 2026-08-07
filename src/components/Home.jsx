@@ -24,7 +24,7 @@ const Home = () => {
             <motion.div className="flex flex-col justify-between pt-10 md:pt-20">
               <motion.div initial={{ opacity: 0, x: -50 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.8 }} className="flex flex-col items-center md:items-start flex-1 text-center md:text-left">
                 <motion.p className="text-lg sm:text-xl mb-2 md:mb-4 text-white" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.2 }}>
-                  Hey 👋 I'm Oluwajoba Bukola
+                  Hey 👋 I&apos;m Oluwajoba Bukola
                 </motion.p>
                 <motion.h1 className="text-5xl md:text-6xl lg:text-7xl font-semibold md:leading-normal mb-4 md:mb-8 text-white" initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.3 }}>
                   Frontend/
@@ -94,7 +94,7 @@ const Home = () => {
             </motion.div>
           </div>
         </div>
-      </section> 
+      </section>
 
       {/* Welcome/About Section */}
       <section id="about" className="py-16 px-4 sm:px-6 md:px-8 lg:px-12 bg-white">
@@ -108,11 +108,11 @@ const Home = () => {
             {/* Right - About Text */}
             <motion.div className="lg:col-span-9 relative" initial={{ opacity: 0, x: 20 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }}>
               {/* <h2 className="text-gray-900 text-2xl sm:text-4xl sm:[line-height:3rem] mb-6">
-                Welcome to my portfolio! I'm <span className="font-semibold">Oluwajoba Bukola</span>, a <span className="font-semibold">passionate and innovative web designer and developer</span>. With{" "}
+                Welcome to my portfolio! I&apos;m <span className="font-semibold">Oluwajoba Bukola</span>, a <span className="font-semibold">passionate and innovative web designer and developer</span>. With{" "}
                 <span className="font-semibold">3+ years of experience</span> in the industry, I specialize in creating visually stunning and highly functional websites that provide an exceptional user experience.
               </h2> */}
-              <WordOpacityScroll value="Welcome to my portfolio! I'm Oluwajoba Bukola, a passionate and innovative web designer and developer. With 3+ years of experience in the industry, I specialize in creating visually stunning and highly functional websites that provide an exceptional user experience." />
-              <a href="/projects" className="inline-flex items-center gap-2 text-gray-900 hover:text-lime-accent transition-colors duration-300 underline">
+              <WordOpacityScroll value="Welcome to my portfolio! I&apos;m Oluwajoba Bukola, a passionate and innovative web designer and developer. With 3+ years of experience in the industry, I specialize in creating visually stunning and highly functional websites that provide an exceptional user experience." />
+              <a href="#projects" className="inline-flex items-center gap-2 text-gray-900 hover:text-lime-accent transition-colors duration-300 underline">
                 See my latest work
                 <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
